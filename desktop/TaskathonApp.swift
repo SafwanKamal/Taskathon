@@ -4,6 +4,18 @@ import Foundation
 
 final class WindowDragView: NSView {
     override var mouseDownCanMoveWindow: Bool { true }
+
+    override func acceptsFirstMouse(for event: NSEvent?) -> Bool {
+        return true
+    }
+
+    override func hitTest(_ point: NSPoint) -> NSView? {
+        return self
+    }
+
+    override func mouseDown(with event: NSEvent) {
+        window?.performDrag(with: event)
+    }
 }
 
 final class AppDelegate: NSObject, NSApplicationDelegate {
@@ -65,10 +77,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             webView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             webView.topAnchor.constraint(equalTo: contentView.topAnchor),
             webView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-            dragView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 132),
+            dragView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 92),
             dragView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             dragView.topAnchor.constraint(equalTo: contentView.topAnchor),
-            dragView.heightAnchor.constraint(equalToConstant: 32)
+            dragView.heightAnchor.constraint(equalToConstant: 40)
         ])
 
         window.contentView = contentView
