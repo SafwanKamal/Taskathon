@@ -10,7 +10,7 @@ final class WindowDragView: NSView {
     }
 
     override func hitTest(_ point: NSPoint) -> NSView? {
-        return self
+        return bounds.contains(point) ? self : nil
     }
 
     override func mouseDown(with event: NSEvent) {
