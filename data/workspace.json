@@ -1,0 +1,266 @@
+{
+  "pages": [
+    {
+      "id": "0ab15e9d-8f33-4ffe-9013-ef9a4e16c992",
+      "title": "Workspace Home",
+      "icon": "home",
+      "parentId": null,
+      "archived": false,
+      "createdAt": "2026-04-25T08:23:44.410Z",
+      "updatedAt": "2026-04-27T09:24:48.927Z"
+    },
+    {
+      "id": "29b1edc1-8184-4d5b-b4df-0dd394550db3",
+      "title": "Project Notes",
+      "icon": "spark",
+      "parentId": "0ab15e9d-8f33-4ffe-9013-ef9a4e16c992",
+      "archived": false,
+      "createdAt": "2026-04-25T08:23:44.410Z",
+      "updatedAt": "2026-04-25T08:23:44.410Z"
+    },
+    {
+      "id": "41d0b9f7-15f1-4c30-be05-f514abf8eb01",
+      "title": "Daily Notes",
+      "icon": "calendar",
+      "parentId": "0ab15e9d-8f33-4ffe-9013-ef9a4e16c992",
+      "archived": false,
+      "createdAt": "2026-04-25T08:23:44.410Z",
+      "updatedAt": "2026-04-25T08:23:44.410Z"
+    },
+    {
+      "id": "8091c43c-252b-4262-961d-64e5b43c46df",
+      "title": "New Page",
+      "icon": "doc",
+      "parentId": "0ab15e9d-8f33-4ffe-9013-ef9a4e16c992",
+      "archived": false,
+      "createdAt": "2026-04-26T00:47:50.212Z",
+      "updatedAt": "2026-04-26T00:48:03.777Z"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "d69ba17f-2149-4919-91f6-b5da4eac4e03",
+      "pageId": "0ab15e9d-8f33-4ffe-9013-ef9a4e16c992",
+      "type": "heading",
+      "content": "Local workspace",
+      "checked": false,
+      "order": 1,
+      "createdAt": "2026-04-25T08:23:44.410Z",
+      "updatedAt": "2026-04-26T00:44:43.851Z"
+    },
+    {
+      "id": "d7de7363-bcff-46d2-b85f-7a8ef24213fc",
+      "pageId": "0ab15e9d-8f33-4ffe-9013-ef9a4e16c992",
+      "type": "paragraph",
+      "content": "A lightweight Notion-style editor with page nesting, blocks, search, and API endpoints ready for MCP tooling.",
+      "checked": false,
+      "order": 2,
+      "createdAt": "2026-04-25T08:23:44.410Z",
+      "updatedAt": "2026-04-26T00:44:43.852Z"
+    },
+    {
+      "id": "cf1d3626-185e-483e-9f88-6a9342315cbe",
+      "pageId": "0ab15e9d-8f33-4ffe-9013-ef9a4e16c992",
+      "type": "todo",
+      "content": "Create a page from the sidebar",
+      "checked": true,
+      "order": 4,
+      "createdAt": "2026-04-25T08:23:44.410Z",
+      "updatedAt": "2026-04-26T00:44:43.855Z"
+    },
+    {
+      "id": "bd43d259-1f1d-4c73-9a19-cdaadbca16bd",
+      "pageId": "0ab15e9d-8f33-4ffe-9013-ef9a4e16c992",
+      "type": "todo",
+      "content": "Use the API from an AI tool",
+      "checked": true,
+      "order": 5,
+      "createdAt": "2026-04-25T08:23:44.410Z",
+      "updatedAt": "2026-04-26T00:47:25.109Z"
+    },
+    {
+      "id": "af8639fb-9bf5-4fde-b18b-3c938aec5c85",
+      "pageId": "29b1edc1-8184-4d5b-b4df-0dd394550db3",
+      "type": "heading",
+      "content": "Project plan",
+      "checked": false,
+      "order": 0,
+      "createdAt": "2026-04-25T08:23:44.410Z",
+      "updatedAt": "2026-04-25T08:23:44.410Z"
+    },
+    {
+      "id": "f901391e-a498-4f49-b72a-37655997c024",
+      "pageId": "29b1edc1-8184-4d5b-b4df-0dd394550db3",
+      "type": "bulleted",
+      "content": "Keep storage local and inspectable",
+      "checked": false,
+      "order": 1,
+      "createdAt": "2026-04-25T08:23:44.410Z",
+      "updatedAt": "2026-04-25T08:23:44.410Z"
+    },
+    {
+      "id": "886c1b48-1c67-4ab3-95d2-fb6197c4aab2",
+      "pageId": "41d0b9f7-15f1-4c30-be05-f514abf8eb01",
+      "type": "paragraph",
+      "content": "Capture notes, decisions, and loose thoughts here.",
+      "checked": false,
+      "order": 0,
+      "createdAt": "2026-04-25T08:23:44.410Z",
+      "updatedAt": "2026-04-25T08:23:44.410Z"
+    },
+    {
+      "id": "34e83ab9-052c-436f-99f9-0b4dd6832571",
+      "pageId": "0ab15e9d-8f33-4ffe-9013-ef9a4e16c992",
+      "type": "paragraph",
+      "content": "",
+      "checked": false,
+      "order": 3,
+      "createdAt": "2026-04-25T08:24:15.197Z",
+      "updatedAt": "2026-04-26T00:44:43.853Z"
+    },
+    {
+      "id": "fb8e75cc-180b-4019-a044-907c7f21c957",
+      "pageId": "0ab15e9d-8f33-4ffe-9013-ef9a4e16c992",
+      "type": "table",
+      "content": "Table",
+      "checked": false,
+      "data": {
+        "columns": [
+          "Notes",
+          "Name",
+          "Column 4",
+          "Column 5"
+        ],
+        "columnWidths": [
+          223,
+          180,
+          180,
+          180
+        ],
+        "rows": [
+          [
+            "Persist workspace JSON on disk",
+            "Local data",
+            "",
+            ""
+          ],
+          [
+            "Map manifest tools to handlers. Can this expand? Can it? CAN IT? ",
+            "MCP wrapper",
+            "",
+            ""
+          ]
+        ]
+      },
+      "order": 7,
+      "createdAt": "2026-04-25T09:25:18.991Z",
+      "updatedAt": "2026-04-27T09:24:48.927Z"
+    },
+    {
+      "id": "0f2ff94d-4443-46fd-b9a6-a4432d915e08",
+      "pageId": "0ab15e9d-8f33-4ffe-9013-ef9a4e16c992",
+      "type": "table",
+      "content": "Table",
+      "checked": false,
+      "data": {
+        "columns": [
+          "Name",
+          "Column 3",
+          "Column 2"
+        ],
+        "columnWidths": [
+          229,
+          211,
+          180
+        ],
+        "rows": [
+          [
+            "//c\n\n\n\n",
+            "",
+            ""
+          ],
+          [
+            "MCP wrapper",
+            "",
+            ""
+          ]
+        ]
+      },
+      "order": 6,
+      "createdAt": "2026-04-25T09:31:46.742Z",
+      "updatedAt": "2026-04-27T09:24:22.503Z"
+    },
+    {
+      "id": "5304b5f1-e609-4270-8fb7-a79b93920d45",
+      "pageId": "0ab15e9d-8f33-4ffe-9013-ef9a4e16c992",
+      "type": "heading",
+      "content": "",
+      "checked": false,
+      "data": null,
+      "order": 8,
+      "createdAt": "2026-04-25T09:35:14.893Z",
+      "updatedAt": "2026-04-26T00:44:43.861Z"
+    },
+    {
+      "id": "666bddb7-350e-4457-b2fd-b547cbb27657",
+      "pageId": "0ab15e9d-8f33-4ffe-9013-ef9a4e16c992",
+      "type": "table",
+      "content": "Table",
+      "checked": false,
+      "data": {
+        "columns": [
+          "Name lkajdfksjkldasjfkjdlkasjfkdjal",
+          "Status",
+          "Notes",
+          "Column 4",
+          "Column 6",
+          "Column 5"
+        ],
+        "rows": [
+          [
+            "Local data",
+            "Done",
+            "Persist workspace JSON on disk",
+            "//c\n\n",
+            "",
+            ""
+          ],
+          [
+            "MCP wrapper",
+            "Next",
+            "Map manifest tools to handlers",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      "order": 9,
+      "createdAt": "2026-04-25T09:36:14.942Z",
+      "updatedAt": "2026-04-27T09:01:53.581Z"
+    },
+    {
+      "id": "1b14d72b-3898-409e-a022-f654efdad072",
+      "pageId": "0ab15e9d-8f33-4ffe-9013-ef9a4e16c992",
+      "type": "paragraph",
+      "content": "Inserted in middle",
+      "checked": false,
+      "data": null,
+      "order": 0,
+      "createdAt": "2026-04-25T20:32:10.985Z",
+      "updatedAt": "2026-04-26T00:44:43.847Z"
+    },
+    {
+      "id": "cbca9e7f-fd17-4da0-ad4e-199ab94768e7",
+      "pageId": "8091c43c-252b-4262-961d-64e5b43c46df",
+      "type": "paragraph",
+      "content": "",
+      "checked": false,
+      "data": null,
+      "order": 0,
+      "createdAt": "2026-04-26T00:47:50.212Z",
+      "updatedAt": "2026-04-26T00:47:50.212Z"
+    }
+  ],
+  "updatedAt": "2026-04-27T09:24:48.927Z"
+}

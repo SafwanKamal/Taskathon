@@ -1,0 +1,17 @@
+{
+  "name": "taskathon-local-notion",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node src/server.js",
+    "mcp": "node mcp/taskathon-mcp-server.js",
+    "dev:mcp": "node mcp/taskathon-mcp-server.js",
+    "build:mac": "bash scripts/build-macos-app.sh",
+    "start": "NODE_ENV=production node src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

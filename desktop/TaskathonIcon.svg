@@ -1,0 +1,134 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Softer / less strong background gradient -->
+    <radialGradient id="bgMain" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(150 130) rotate(38) scale(1060 1060)">
+      <stop offset="0%" stop-color="#0D6D66"/>
+      <stop offset="18%" stop-color="#0A2C2E"/>
+      <stop offset="54%" stop-color="#08111B"/>
+      <stop offset="84%" stop-color="#090D17"/>
+      <stop offset="100%" stop-color="#3E236F"/>
+    </radialGradient>
+
+    <radialGradient id="greenGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(145 140) scale(360 280)">
+      <stop offset="0%" stop-color="#19E7D1" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#19E7D1" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="purpleGlowBg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(845 825) scale(380 320)">
+      <stop offset="0%" stop-color="#7A39E1" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#7A39E1" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Main mark -->
+    <linearGradient id="topTeal" x1="210" y1="206" x2="585" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#20F1D5"/>
+      <stop offset="55%" stop-color="#11D3B8"/>
+      <stop offset="100%" stop-color="#0A8E7C"/>
+    </linearGradient>
+
+    <linearGradient id="stemGradient" x1="487" y1="320" x2="487" y2="846" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#12B7A2"/>
+      <stop offset="55%" stop-color="#0B5A53"/>
+      <stop offset="78%" stop-color="#120A25"/>
+      <stop offset="100%" stop-color="#7C37E0"/>
+    </linearGradient>
+
+    <linearGradient id="whitePaper" x1="186" y1="355" x2="603" y2="248" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="80%" stop-color="#EFF7F5"/>
+      <stop offset="100%" stop-color="#E9FFFF"/>
+    </linearGradient>
+
+    <linearGradient id="paperFold" x1="548" y1="375" x2="695" y2="214" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#E6FFFB"/>
+      <stop offset="65%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E9FFFF"/>
+    </linearGradient>
+
+    <linearGradient id="purpleIcon" x1="650" y1="700" x2="885" y2="905" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#D3B1FF"/>
+      <stop offset="50%" stop-color="#AF82FF"/>
+      <stop offset="100%" stop-color="#7D3BE5"/>
+    </linearGradient>
+
+    <linearGradient id="tealIcon" x1="680" y1="185" x2="895" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#26F5DA"/>
+      <stop offset="100%" stop-color="#12D0C2"/>
+    </linearGradient>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.30"/>
+    </filter>
+
+    <filter id="tealGlow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0.07  0 0 0 0 0.95  0 0 0 0 0.85  0 0 0 0.25 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="purpleGlow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0.60  0 0 0 0 0.38  0 0 0 0 1.0  0 0 0 0.28 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="clip">
+      <rect width="1024" height="1024" rx="225"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="1024" height="1024" rx="225" fill="url(#bgMain)"/>
+    <rect width="1024" height="1024" rx="225" fill="url(#greenGlow)"/>
+    <rect width="1024" height="1024" rx="225" fill="url(#purpleGlowBg)"/>
+    <rect width="1024" height="1024" rx="225" fill="#050914" opacity="0.12"/>
+
+    <!-- Main folded mark -->
+    <g filter="url(#softShadow)">
+      <path d="M378 274H577V694C577 775 520 860 434 875H378V274Z" fill="url(#stemGradient)"/>
+      <path d="M170 274C170 220 214 176 268 176H577V274H170Z" fill="url(#topTeal)"/>
+      <path d="M170 365V336C170 302 198 274 232 274H407C489 274 542 248 577 176V274L433 365H170Z" fill="url(#whitePaper)"/>
+      <path d="M577 176L433 365L577 276V176Z" fill="url(#paperFold)"/>
+      <path d="M520 314L577 176L457 352L520 314Z" fill="#0E7D72" opacity="0.90"/>
+      <path d="M434 875C516 858 562 782 577 694C561 761 520 793 478 793H455C419 793 390 820 390 854V875H434Z" fill="url(#purpleIcon)"/>
+      <path d="M577 694C557 780 503 844 434 875C499 848 554 795 577 694Z" fill="#E0CFFF" opacity="0.55"/>
+    </g>
+
+    <!-- Checkbox: arrow/check moved slightly more toward the center -->
+    <g filter="url(#tealGlow)" stroke="url(#tealIcon)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M669 200H834V352H669V200Z"/>
+      <path d="M709 258L760 309L870 187"/>
+    </g>
+
+    <!-- Calendar reduced by ~15% as a whole -->
+    <g transform="translate(766 798) scale(0.85) translate(-766 -798)">
+      <g filter="url(#purpleGlow)" stroke="url(#purpleIcon)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M676 700H856C883 700 905 722 905 749V884C905 911 883 933 856 933H676C649 933 627 911 627 884V749C627 722 649 700 676 700Z"/>
+        <path d="M697 663V735"/>
+        <path d="M835 663V735"/>
+        <path d="M627 782H905"/>
+      </g>
+
+      <g fill="url(#purpleIcon)" filter="url(#purpleGlow)">
+        <rect x="687" y="816" width="37" height="37" rx="6"/>
+        <rect x="752" y="816" width="37" height="37" rx="6"/>
+        <rect x="817" y="816" width="37" height="37" rx="6"/>
+
+        <rect x="687" y="869" width="37" height="37" rx="6"/>
+        <rect x="752" y="869" width="37" height="37" rx="6"/>
+        <rect x="817" y="869" width="37" height="37" rx="6"/>
+      </g>
+    </g>
+  </g>
+</svg>

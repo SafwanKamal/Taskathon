@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Taskathon Notion Lite</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <div id="appShell" class="app-shell">
+      <aside class="sidebar">
+        <div class="sidebar-head">
+          <div class="workspace-mark">
+            <div class="workspace-copy">
+              <strong>Taskathon</strong>
+              <span>Local workspace</span>
+            </div>
+          </div>
+          <button id="sidebarToggle" class="sidebar-toggle" type="button" aria-label="Tuck sidebar away" aria-expanded="true">‹</button>
+        </div>
+        <div class="sidebar-content">
+          <div class="search-row">
+            <input id="searchInput" type="search" placeholder="Search pages and blocks" aria-label="Search pages and blocks">
+          </div>
+          <button class="primary-action" id="newPageButton" type="button">
+            <span aria-hidden="true">+</span>
+            New page
+          </button>
+          <div class="sidebar-section-title">Pages</div>
+          <nav id="pageTree" class="page-tree" aria-label="Pages"></nav>
+        </div>
+      </aside>
+
+      <main class="editor">
+        <header class="topbar">
+          <div class="crumb" id="crumb">Workspace</div>
+          <div class="topbar-actions">
+            <a href="/api/mcp/manifest" target="_blank" rel="noreferrer">API manifest</a>
+          </div>
+        </header>
+
+        <section id="editorSurface" class="editor-surface" aria-live="polite"></section>
+      </main>
+    </div>
+    <button id="commandNib" class="command-nib" type="button" aria-label="Open command guide" aria-controls="commandPalette" aria-expanded="false">?</button>
+    <aside id="commandPalette" class="command-palette hidden" aria-label="Command guide" aria-hidden="true">
+      <div class="command-palette-head">
+        <strong>Commands</strong>
+        <button id="closeCommandPalette" type="button" class="command-close" aria-label="Close command guide">×</button>
+      </div>
+      <div class="command-group">
+        <span class="command-group-title">Blocks</span>
+        <p><code>//heading</code> heading</p>
+        <p><code>//todo</code> todo</p>
+        <p><code>//quote</code> quote</p>
+        <p><code>//bullet</code> bullet</p>
+        <p><code>//table</code> table</p>
+      </div>
+      <div class="command-group">
+        <span class="command-group-title">Tables</span>
+        <p><code>//r</code> row below</p>
+        <p><code>//c</code> column right</p>
+        <p><code>//dr</code> delete row</p>
+        <p><code>//dc</code> delete column</p>
+      </div>
+    </aside>
+    <div id="viewportScrollbar" class="app-scrollbar" aria-hidden="true">
+      <div class="app-scrollbar-thumb"></div>
+    </div>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
